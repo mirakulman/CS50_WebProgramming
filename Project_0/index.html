@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .row>div {
+            margin: 20px;
+            padding: 20px;
+            background-color: #A9CCE3;
+            border: 2px solid black;
+        }
+
+        h1, h3 {
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .inButton {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Search on Google!</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-5 col-sm-6">
+                <h2>
+                    Google Search
+                </h2>
+                <p>
+                <form action="https://www.google.com/search">
+                    <input type="text" name="q">
+                    <input class="inButton" type="submit" value="Google Search">
+                </form>
+
+                </p>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-6">
+
+                <h2>
+                    Image Search
+                </h2>
+
+
+                <p>
+                <form action="https://www.google.com/images">
+                    <input type="text" name="q">
+                    <input class="inButton" type="submit" value="Image Search">
+                </form>
+                </p>
+            </div>
+
+            <div class="col-lg-5 col-md-6 col-sm-7">
+                <h2>
+                    Advanced Search
+                </h2>
+
+                <p>
+                <form action="https://www.google.com/search">
+                    <!-- as_q=all_this&as_epq=Exactly&as_oq=any&as_eq=none -->
+                    <div>
+                        <h3>All these words: </h3>
+                        <input type="text" name="as_q">
+                        <h3>This exact word or phrase: </h3>
+                        <input type="text" name="as_epq">
+                        <h3>Any of these words: </h3>
+                        <input type="text" name="as_oq">
+                        <h3>None of these words: </h3>
+                        <input type="text" name="as_eq">
+                    </div>
+                    <div>
+                        <input class="inButton" type="submit" value="Advanced Search">
+                    </div>
+                </form>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
